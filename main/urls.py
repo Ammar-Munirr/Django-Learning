@@ -27,6 +27,7 @@ urlpatterns = [
     ])),
     path('app2/',include([
         path('home/',ap2.home),
-        path('hello/',ap2.hello)
+        path('hello/',ap2.hello),
+        path('template/',ap2.template)
     ]))
 ]

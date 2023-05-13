@@ -9,3 +9,6 @@ def hello(request):
 def home(request):
     return HttpResponse('Welcom Home')
 
+
+def template(request):
+    return render(request,'index.html')
