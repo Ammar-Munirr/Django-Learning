@@ -11,4 +11,4 @@ def home(request):
 
 
 def template(request):
-    return render(request,'index.html')
+    return render(request,'app2/index.html')
