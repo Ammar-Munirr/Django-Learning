@@ -1,0 +1,9 @@
+<ul>
+    <li><a href="{{ammar}}">Home</a></li>
+    <li><a href="{% url 'hello' %}">Hello</a></li>
+    <li><a href="{% url 'template' %}">Template</a></li>
+    <li><a href="{% url 'hm' %}">App2</a></li>
+    {% if p %}
+    <li><a href="#"></a>{{p}}</li>
+    {% endif %}
+</ul>
