@@ -17,6 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 from app1 import views as ap1
+from app2 import views as ap2
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -25,4 +26,9 @@ urlpatterns = [
         path('hello/',ap1.hello),
         path('template/',ap1.tempelate)
     ])),
+    path('app2/',include([
+        path('home/',ap2.home),
+        path('hello/',ap2.hello),
+        path('template/',ap2.template)
+    ]))
 ]
