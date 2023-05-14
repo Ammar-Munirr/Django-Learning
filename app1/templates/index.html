@@ -1,4 +1,11 @@
 {% extends 'base.html' %}
 {% block body %}
 <h1>From app1</h1>
+{% url 'home' as ammar %}
+<ul>
+    <li><a href="{{ammar}}">Home</a></li>
+    <li><a href="{% url 'hello' %}">Hello</a></li>
+    <li><a href="{% url 'template' %}">Template</a></li>
+    <li><a href="{% url 'hm' %}">App2</a></li>
+</ul>
 {% endblock body %}

@@ -22,12 +22,12 @@ from app2 import views as ap2
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('app1/',include([
-        path('home/',ap1.home),
-        path('hello/',ap1.hello),
-        path('template/',ap1.tempelate)
+        path('home/',ap1.home,name='home'),
+        path('hello/',ap1.hello,name='hello'),
+        path('template/',ap1.tempelate,name='template')
     ])),
     path('app2/',include([
-        path('home/',ap2.home),
+        path('home/',ap2.home,name='hm'),
         path('hello/',ap2.hello),
         path('template/',ap2.template)
     ]))
