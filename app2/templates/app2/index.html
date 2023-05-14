@@ -1,5 +1,11 @@
-{% extends 'base.html' %}
+{% extends 'app2/base.html' %}
+{% load static %}
 
+{% block s %}
+{{ block.super }}
+<link rel="stylesheet" href="{% static '/app2/ds.css' %}">
+{% endblock s %}
 {% block body %}
 <h2>Hello from app2</h2>
+<h1>oj</h1>
 {% endblock body %}
